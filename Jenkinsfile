@@ -11,10 +11,6 @@ podTemplate(yaml: '''
         - 99d
       - name: kaniko
         image: gcr.io/kaniko-project/executor:debug
-        command:
-        - sleep
-        args:
-        - 9999999
         volumeMounts:
         - name: kaniko-secret
           mountPath: /kaniko/.docker
